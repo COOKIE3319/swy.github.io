@@ -1,0 +1,34 @@
+@charset "utf-8";
+body { background: #EEE;}
+#content { width: 1200px; margin: 0 auto;}
+#content:after, #content:before { clear: both; content: " "; display: block; height: 0; overflow: hidden; visibility: hidden; }
+
+#top { background:#5E75BE; height:80px; line-height:80px; margin-bottom: 10px; box-shadow: 0 4px 4px #DDD;}
+#top .left { font-size:30px; color:#FFF; }
+
+#left { float: left; width: 160px; padding: 10px; background: #FFF; padding-bottom: 4px; box-shadow: 4px 4px 4px #CCC; }
+
+.leftfixed { position: fixed; top: 10px; }
+#left dl dt span { background: #5E75BE; line-height: 40px; font-size: 17px; font-weight: bold; text-align: center; color: #FFF; margin-bottom: 4px; display: block;}
+#left dl dd a { display: block; background: #EEE; line-height: 30px; height: 30px; text-align: center; margin-bottom: 4px; }
+#left dl dd a:hover { background: #5E75BE; color: #FFF; }
+#left dl dd a.current { background: #5E75BE; color: #FFF; }
+.lt { background: #F5F5F5; border: 1px solid #EEE; line-height: 36px; font-size: 16px; text-align: center; }
+.lb { padding: 20px; overflow: hidden; zoom: 1; border: 1px solid #EEE; border-top: none; background: #FFF; }
+.lb .btn { margin-bottom: 4px; text-align: center; }
+.lb .current { background: #000; border-color: #000; }
+.lf { height: 20px; }
+#right { padding: 20px; background: #FFF; float: right; width: 1030px; box-shadow: 4px 4px 4px #CCC; }
+#right .hd { font-size: 18px; font-weight: bold; border-bottom: 1px solid #EEE; padding-bottom: 10px; }
+#right .bd { margin-top: 10px; margin-bottom: 10px;}
+#bottom { background: #5E75BE; padding: 20px; margin-top: 10px; color: #FFF; }
+#bottom a { color: #FFF; }
+
+/*分页样式*/
+.page_show { margin: 20px 0; }
+.page_show a, .page_show span { display: inline-block; height: 40px; line-height: 40px; min-width: 40px; text-align: center; background: #F2F2F2; margin-right: 2px; }
+.page_show a:link, .page_show a:visited { text-decoration: none; }
+.page_show a:hover, .page_show a.current { background: #0A8; color: #FFF; }
+
+#loginbody { background: url(loginbg.png) top no-repeat;  }
+#login_wrap { box-shadow: 0 0 20px #C8D6EA; padding: 50px; border-radius: 10px; margin-top: 100px;}

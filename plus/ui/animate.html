@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>aimate</title>
+<link href="ui.css" rel="stylesheet" type="text/css" />
+<link href="font.css" rel="stylesheet" type="text/css" />
+<link href="animate.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jquery.min.js"></script>
+
+<style type="text/css">
+#animate { margin: 100px auto; width: 200px; height: 200px; text-align: center; background: #242424; color: #FFF; text-align: center; line-height: 200px; font-size: 30px;}
+</style>
+<script type="text/javascript">
+$(function(){
+	$('#animateclassname').change(function(){
+		var animateclassname = $(this).val();
+		var idanimate = $('#animate');
+		idanimate.removeClass();
+		idanimate.addClass('animated '+animateclassname+'');
+		$('#classname').html(animateclassname);
+		setTimeout(function(){
+			idanimate.removeClass();
+		}, 3000);
+	});
+});
+</script>
+</head>
+<body>
+<div class="container">
+	<div id="animate">animate</div>
+	<div id="classname" class="ac f40 mb40">animate</div>
+	<form>
+		<div class="form-group">
+			<div class="field">
+				<select id="animateclassname" class="input" name="animateclassname">
+					<optgroup label="Attention Seekers">
+					<option value="bounce">bounce</option>
+					<option value="flash">flash</option>
+					<option value="pulse">pulse</option>
+					<option value="rubberBand">rubberBand</option>
+					<option value="shake">shake</option>
+					<option value="swing">swing</option>
+					<option value="tada">tada</option>
+					<option value="wobble">wobble</option>
+					<option value="jello">jello</option>
+					</optgroup>
+					<optgroup label="Bouncing Entrances - 跳入">
+					<option value="bounceIn">bounceIn</option>
+					<option value="bounceInDown">bounceInDown</option>
+					<option value="bounceInLeft">bounceInLeft</option>
+					<option value="bounceInRight">bounceInRight</option>
+					<option value="bounceInUp">bounceInUp</option>
+					</optgroup>
+					<optgroup label="Bouncing Exits - 跳出">
+					<option value="bounceOut">bounceOut</option>
+					<option value="bounceOutDown">bounceOutDown</option>
+					<option value="bounceOutLeft">bounceOutLeft</option>
+					<option value="bounceOutRight">bounceOutRight</option>
+					<option value="bounceOutUp">bounceOutUp</option>
+					</optgroup>
+					<optgroup label="Fading Entrances - 淡入">
+					<option value="fadeIn">fadeIn</option>
+					<option value="fadeInDown">fadeInDown</option>
+					<option value="fadeInDownBig">fadeInDownBig</option>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInLeftBig">fadeInLeftBig</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="fadeInRightBig">fadeInRightBig</option>
+					<option value="fadeInUp">fadeInUp</option>
+					<option value="fadeInUpBig">fadeInUpBig</option>
+					</optgroup>
+					<optgroup label="Fading Exits - 淡出">
+					<option value="fadeOut">fadeOut</option>
+					<option value="fadeOutDown">fadeOutDown</option>
+					<option value="fadeOutDownBig">fadeOutDownBig</option>
+					<option value="fadeOutLeft">fadeOutLeft</option>
+					<option value="fadeOutLeftBig">fadeOutLeftBig</option>
+					<option value="fadeOutRight">fadeOutRight</option>
+					<option value="fadeOutRightBig">fadeOutRightBig</option>
+					<option value="fadeOutUp">fadeOutUp</option>
+					<option value="fadeOutUpBig">fadeOutUpBig</option>
+					</optgroup>
+					<optgroup label="Flippers - 弹动">
+					<option value="flip">flip</option>
+					<option value="flipInX">flipInX</option>
+					<option value="flipInY">flipInY</option>
+					<option value="flipOutX">flipOutX</option>
+					<option value="flipOutY">flipOutY</option>
+					</optgroup>
+					<optgroup label="Lightspeed - 闪入出">
+					<option value="lightSpeedIn">lightSpeedIn</option>
+					<option value="lightSpeedOut">lightSpeedOut</option>
+					</optgroup>
+					<optgroup label="Rotating Entrances - 旋转入">
+					<option value="rotateIn">rotateIn</option>
+					<option value="rotateInDownLeft">rotateInDownLeft</option>
+					<option value="rotateInDownRight">rotateInDownRight</option>
+					<option value="rotateInUpLeft">rotateInUpLeft</option>
+					<option value="rotateInUpRight">rotateInUpRight</option>
+					</optgroup>
+					<optgroup label="Rotating Exits - 旋转出">
+					<option value="rotateOut">rotateOut</option>
+					<option value="rotateOutDownLeft">rotateOutDownLeft</option>
+					<option value="rotateOutDownRight">rotateOutDownRight</option>
+					<option value="rotateOutUpLeft">rotateOutUpLeft</option>
+					<option value="rotateOutUpRight">rotateOutUpRight</option>
+					</optgroup>
+					<optgroup label="Sliding Entrances - 滑入">
+					<option value="slideInUp">slideInUp</option>
+					<option value="slideInDown">slideInDown</option>
+					<option value="slideInLeft">slideInLeft</option>
+					<option value="slideInRight">slideInRight</option>
+					</optgroup>
+					<optgroup label="Sliding Exits - 滑出">
+					<option value="slideOutUp">slideOutUp</option>
+					<option value="slideOutDown">slideOutDown</option>
+					<option value="slideOutLeft">slideOutLeft</option>
+					<option value="slideOutRight">slideOutRight</option>
+					</optgroup>
+					<optgroup label="Zoom Entrances - 缩放入">
+					<option value="zoomIn">zoomIn</option>
+					<option value="zoomInDown">zoomInDown</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomInUp">zoomInUp</option>
+					</optgroup>
+					<optgroup label="Zoom Exits - 缩放出">
+					<option value="zoomOut">zoomOut</option>
+					<option value="zoomOutDown">zoomOutDown</option>
+					<option value="zoomOutLeft">zoomOutLeft</option>
+					<option value="zoomOutRight">zoomOutRight</option>
+					<option value="zoomOutUp">zoomOutUp</option>
+					</optgroup>
+					<optgroup label="Specials - 特殊">
+					<option value="hinge">hinge</option>
+					<option value="jackInTheBox">jackInTheBox</option>
+					<option value="rollIn">rollIn</option>
+					<option value="rollOut">rollOut</option>
+					</optgroup>
+				</select>
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+</html>

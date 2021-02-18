@@ -1,0 +1,1 @@
+<div class="current_location">当前位置：<a href="<%=site_dir%>">首页</a> > <%=channel_location(c_id)%></div>
